@@ -1,8 +1,6 @@
 .nav
-  padding: 48px 0
-  background-color: $c-citrine-white
 
-  &__link-logo
+  &__logo-link
     display: flex
     align-items: flex-start
 
@@ -11,26 +9,37 @@
     align-items: flex-start
     justify-content: space-between
 
-  &__wrapper
+  &__shopping
     display: flex
     align-items: center
 
-  &__logo-icon
-    margin-right: 12px
-
-  &__shop
+  &__shopping-cart
+    background: transparent
     margin-right: 48px
 
+    &:hover
+
+      img
+        filter: invert(63%) sepia(7%) saturate(379%) hue-rotate(40deg) brightness(90%) contrast(86%)
+
+  &__button-img
+    transition: filter .3s ease
+    
   &__registration
-    color: $c-white
     text-align: center
-    leading-trim: both
-    text-edge: cap
     font-family: Space Grotesk
     font-size: 20px
-    font-style: normal
     font-weight: 700
     line-height: normal
+    color: $c-white
     background-color: $c-black
     padding: 12px
     border-radius: 4px
+    transition: background-color .3s ease
+
+    &:hover
+      background-color: darken($c-white, 70%)
+
+  &__icon
+    margin-right: 12px
+      

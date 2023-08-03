@@ -1,0 +1,59 @@
+.cart
+  width: 445px
+  height: 100%
+  background-color: $c-black
+  position: fixed
+  top: 0
+  right: -100%
+  padding: 49px 44px 0 37px 
+  margin-bottom: 40px
+  transition: right .3s ease
+
+  &.active
+    right: 0
+
+  &__wrapper-title
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 22px
+    border-bottom: 1px solid $c-citrine-white
+    margin-bottom: 53px
+  
+  &__title
+    color: $c-citrine-white
+    text-edge: cap
+    font-family: Space Grotesk
+    font-size: 24px
+    font-weight: 700
+    line-height: normal
+
+  &__close
+    background: transparent
+    transition: filter .3s ease
+
+    &:hover
+      filter: invert(63%) sepia(7%) saturate(379%) hue-rotate(40deg) brightness(90%) contrast(86%)
+
+
+  &__footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 35px
+    border-top: 1px solid $c-citrine-white
+
+  &__total
+    color: $c-citrine-white
+    font-family: Space Grotesk
+    font-size: 14px
+    font-weight: 700
+    line-height: normal
+    text-transform: uppercase
+
+  &__result
+    color: $c-citrine-white
+    font-family: Space Grotesk
+    font-size: 14px
+    font-weight: 700
+    line-height: normal

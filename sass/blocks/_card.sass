@@ -1,0 +1,78 @@
+.card
+  display: flex
+  flex-direction: column
+
+  &__photo
+    position: relative
+    border: 1px solid $c-black
+    height: 300px
+    padding: 12px
+    border-radius: 4px
+    margin-bottom: 12px
+
+  &__quality
+    position: absolute
+    color: $c-citrine-white
+    font-family: Space Grotesk
+    font-size: 12px
+    font-weight: 400
+    line-height: normal
+    text-transform: uppercase
+    background-color: $c-black
+    padding: 8px
+    width: max-content
+    border-radius: 4px
+
+  &__info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 12px
+
+  &__name
+    color: $c-black
+    font-family: Space Grotesk
+    font-size: 14px
+    font-weight: 700
+    line-height: normal
+
+  &__price
+    color: $c-black
+    font-family: Space Grotesk
+    font-size: 14px
+    font-weight: 700
+    line-height: normal
+    
+  &__condition
+    color: $c-black
+    font-family: Space Grotesk
+    font-size: 14px
+    font-weight: 500
+    line-height: normal
+    text-align: end
+
+  &__rating
+    color: $c-black
+    font-family: Space Grotesk
+    font-size: 14px
+    font-weight: 400
+    line-height: normal
+    text-align: right
+
+  &__button
+    text-align: center
+    font-family: Space Grotesk
+    font-size: 14px
+    font-weight: 700
+    line-height: normal
+    color: $c-white
+    text-transform: uppercase
+    background-color: $c-black
+    padding: 16px
+    width: 100%
+    border-radius: 4px
+    transition: background-color .3s ease
+    margin-top: auto
+
+    &:hover
+      background-color: darken($c-white, 70%)
