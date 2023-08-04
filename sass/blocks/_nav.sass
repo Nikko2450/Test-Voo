@@ -1,24 +1,28 @@
 .nav
-
-  &__logo
-
-    @media (max-width: $xs)
-      margin-bottom: 50px
       
   &__logo-link
     display: flex
     align-items: flex-start
 
+    @media (max-width: $xs)
+      margin-bottom: 0
+
+  &__icon
+    @media (max-width: $sm)
+      max-width: 23px
+
+  &__icon-big
+     @media (max-width: $sm)
+      max-width: 107px
+
   &__container
     display: flex
     align-items: flex-start
     justify-content: space-between
+    flex-wrap: wrap
 
-    @media (max-width: $xs)
-      flex-direction: column
+    @media (max-width: $sm)
       align-items: center
-      justify-content: center
-      
 
   &__shopping
     display: flex
@@ -27,9 +31,12 @@
   &__shopping-cart
     background: transparent
     margin-right: 48px
+    padding: 5px
+
+    @media (max-width: $xs)
+      margin-right: 16px
 
     &:hover
-
       img
         filter: invert(63%) sepia(7%) saturate(379%) hue-rotate(40deg) brightness(90%) contrast(86%)
 
@@ -47,6 +54,9 @@
     padding: 12px
     border-radius: 4px
     transition: background-color .3s ease
+
+    @media (max-width: $xs)
+      font-size: 14px
 
     &:hover
       background-color: darken($c-white, 70%)

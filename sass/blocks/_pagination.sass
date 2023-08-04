@@ -1,5 +1,8 @@
 .pagination
-  margin: 70px 0 96px
+  margin-top: 70px
+
+  @media (max-width: $sm)
+    margin-top: 59px
 
   &__list
     display: flex
@@ -37,3 +40,11 @@
     border-radius: 50%
     width: 39px
     height: 39px
+
+.is-active
+  background-color: $c-cod-gray
+  color: $c-white
+
+  &:hover
+    background-color: $c-cod-gray
+    color: $c-white

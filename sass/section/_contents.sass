@@ -1,6 +1,13 @@
 .contents
+  $this:&
   background-color: $c-citrine-white
-  padding: 100px 0
+  padding: 100px 0 200px
+
+  @media (max-width: $sm)
+    padding-top: 50px
+
+  @media (max-width: $xs)
+    padding-top: 24px
 
   &__important-info
     display: flex
@@ -9,6 +16,9 @@
     background-color: $c-black
     padding: 24px
     border-radius: 4px
+
+    @media (max-width: $xs)
+      padding: 12px
 
   &__img-alert
     margin-right: 6px
@@ -34,3 +44,6 @@
     line-height: normal
     color: $c-citrine-white
     width: 100%
+
+    @media (max-width: $xs)
+      font-size: 10px

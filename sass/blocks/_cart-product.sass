@@ -2,7 +2,12 @@
   display: flex
   align-items: flex-start
   gap: 18px
-  margin-bottom: 40px
+
+  &:not(:last-of-type)
+    margin-bottom: 40px
+
+  &__img
+    height: 100%
 
   &__frame
     width: 74px
@@ -12,6 +17,9 @@
 
   &__info
     width: 63%
+
+    @media (max-width: $xs)
+      width: 50%
 
   &__name
     color: $c-citrine-white
@@ -34,7 +42,7 @@
     align-items: center
     gap: 10px
 
-  &__score-negative
+  &__minus
     color: $c-citrine-white
     text-align: center
     font-family: Space Grotesk
@@ -55,7 +63,7 @@
     font-weight: 700
     line-height: normal
 
-  &__score-plus
+  &__plus
     color: $c-citrine-white
     text-align: center
     font-family: Space Grotesk
